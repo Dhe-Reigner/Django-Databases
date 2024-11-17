@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="POST" action="{% url 'join.html' %}> 
+
+ 
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter First Name" name="fname">
+
+  </div>
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Last Name" name="lname">
+
+  </div>
+  <div class="mb-3">
+    
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+
+  </div>
+  <div class="mb-3">
+   
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" name="passwd">
+  </div>
+  <div class="mb-3">  
+    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Your Age" name="age">
+
+  </div>
+ 
+  <button type="submit" class="btn btn-secondary ">Sgn-Up</button>
+</form>
+{% endblock content %}

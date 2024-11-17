@@ -1,1 +1,12 @@
-<h1> Martoh </h1>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1> Members Database </h1>
+
+{% for items in all %}
+{{ items.fname }} {{ items.lname }} <br>
+    Email: {{ items.email }} <br>
+   Age: {{ items.age }} <br>
+    <hr>
+{% endfor %}
+{% endblock content %}
